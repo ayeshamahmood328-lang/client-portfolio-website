@@ -162,9 +162,27 @@ npx serve .
 
 # 📸 Screenshots
 
-> Add screenshots of the Home, About, Skills, Projects, and Contact sections here after uploading the project.
+Home
 
----
+<img width="1335" height="641" alt="image" src="https://github.com/user-attachments/assets/b3fc02bb-5566-4b27-ac0a-5f2237dd24fe" />
+
+About
+
+<img width="1335" height="643" alt="image" src="https://github.com/user-attachments/assets/f5eb43af-c81a-4a72-b928-9619ee44dbca" />
+
+Skills
+
+<img width="1343" height="634" alt="image" src="https://github.com/user-attachments/assets/251163bd-1d5f-41fa-b57c-c2f4e228a489" />
+
+Projects
+<img width="1337" height="580" alt="image" src="https://github.com/user-attachments/assets/489ee80a-55a4-406c-8eba-71c030306f51" />
+<img width="1340" height="552" alt="image" src="https://github.com/user-attachments/assets/4d1948d9-1b00-4889-8ee5-17cc35798f94" />
+<img width="1336" height="638" alt="image" src="https://github.com/user-attachments/assets/f3dd578b-8eb9-44b6-a3fd-dddd2e3f6635" />
+
+Contact
+
+<img width="1332" height="646" alt="image" src="https://github.com/user-attachments/assets/6c8d765b-6db2-45ea-a025-08bc963d4ae4" />
+<img width="1335" height="631" alt="image" src="https://github.com/user-attachments/assets/8b46580b-c58c-4594-a050-0ec3f3adc874" />
 
 # 📄 Documentation
 
