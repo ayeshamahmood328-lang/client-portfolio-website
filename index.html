@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarah Johnson | Frontend Developer Portfolio</title>
+<meta name="description" content="Sarah Johnson is a Frontend Developer specializing in React and modern JavaScript. Explore her projects, skills, and experience — available for new opportunities.">
+<meta name="keywords" content="Sarah Johnson, Frontend Developer, React Developer, Web Developer Portfolio, JavaScript Developer">
+<meta name="author" content="Sarah Johnson">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Sarah Johnson | Frontend Developer Portfolio">
+<meta property="og:description" content="Frontend Developer building fast, accessible, and elegant web experiences.">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<header class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark">SJ</span>
+      Sarah Johnson
+    </a>
+
+    <nav class="nav-menu">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="resume/Sarah-Johnson-Resume.pdf" class="btn btn-primary btn-sm resume-desktop" download>Resume</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <img src="icons/menu.svg" alt="" id="menuIcon">
+          <img src="icons/close.svg" alt="" id="closeIcon" style="display:none;">
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-name">Sarah Johnson</h1>
+        <p class="hero-role">Frontend Developer, building for the web</p>
+
+        <div class="hero-code" aria-hidden="true">
+          <span class="tok-key">const</span> <span class="tok-var">focus</span> <span class="tok-punc">=</span> <span class="tok-str">"React · UI Engineering"</span><span class="tok-punc">;</span><span class="cursor"></span>
+        </div>
+
+        <p class="hero-intro">
+          I design and build clean, responsive interfaces with React, JavaScript, and modern
+          CSS — turning ideas into products that feel fast and work everywhere.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub profile">
+            <img src="icons/github.svg" alt="">
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile">
+            <img src="icons/linkedin.svg" alt="">
+          </a>
+          <a href="mailto:sarah.johnson@example.com" class="social-icon" aria-label="Send an email">
+            <img src="icons/mail.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="images/hero-portrait.svg" alt="Portrait of Sarah Johnson" width="480" height="560">
+        <div class="hero-stat-card">
+          <span class="dot"></span>
+          <span>
+            <strong>Open to work</strong>
+            <span class="label">Available from July 2026</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image reveal">
+        <img src="images/about-photo.svg" alt="Sarah Johnson at her workspace" width="560" height="480">
+      </div>
+
+      <div class="about-text reveal">
+        <span class="section-eyebrow">About Me</span>
+        <h2>A little about how I build</h2>
+        <p class="about-bio">
+          I'm a frontend developer with a focus on turning designs into fast, accessible
+          interfaces. I care about clean component structure, readable code, and details that
+          make a product feel considered — from spacing to load time. Outside of client work,
+          I contribute to a couple of open-source UI libraries and mentor new developers.
+        </p>
+
+        <div class="about-columns">
+          <div class="about-col">
+            <h4>Education</h4>
+            <div class="timeline-item">
+              <div class="t-title">B.Sc. Computer Science</div>
+              <div class="t-meta">National University of Sciences &amp; Technology · 2019–2023</div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-title">Meta Frontend Developer Certificate</div>
+              <div class="t-meta">Coursera · 2023</div>
+            </div>
+          </div>
+
+          <div class="about-col">
+            <h4>Experience</h4>
+            <div class="timeline-item">
+              <div class="t-title">Frontend Developer — NovaTech Solutions</div>
+              <div class="t-meta">2023 – Present</div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-title">Web Development Intern — PixelWorks</div>
+              <div class="t-meta">2022 – 2023</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="resume/Sarah-Johnson-Resume.pdf" class="btn btn-primary" download>
+          <img src="icons/download.svg" alt="" style="filter:brightness(0) invert(1);">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Skills</span>
+        <h2>Tools I work with</h2>
+        <p>A snapshot of the languages, frameworks, and tools I use to design and ship products.</p>
+      </div>
+
+      <div class="skills-grid reveal-stagger reveal">
+        <div class="skill-card"><div class="skill-icon">&lt;/&gt;</div><span>HTML</span></div>
+        <div class="skill-card"><div class="skill-icon">#</div><span>CSS</span></div>
+        <div class="skill-card"><div class="skill-icon">JS</div><span>JavaScript</span></div>
+        <div class="skill-card"><div class="skill-icon">⚛</div><span>React</span></div>
+        <div class="skill-card"><div class="skill-icon">◆</div><span>Node.js</span></div>
+        <div class="skill-card"><div class="skill-icon">▲</div><span>Firebase</span></div>
+        <div class="skill-card"><div class="skill-icon">▪</div><span>Android</span></div>
+        <div class="skill-card"><div class="skill-icon">⌥</div><span>Git</span></div>
+        <div class="skill-card"><div class="skill-icon">●</div><span>GitHub</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Projects</span>
+        <h2>Selected work</h2>
+        <p>A mix of client and personal projects — replace these with your own case studies, screenshots, and links.</p>
+      </div>
+
+      <div class="projects-grid reveal-stagger reveal">
+
+        <article class="project-card">
+          <div class="project-thumb"><img src="images/project-1.svg" alt="TaskFlow project screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <h3>TaskFlow</h3>
+            <p>A collaborative task manager with real-time updates, drag-and-drop boards, and team workspaces.</p>
+            <div class="project-tags"><span>React</span><span>Firebase</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                <img src="icons/github.svg" alt="">GitHub
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <img src="icons/external-link.svg" alt="" style="filter:brightness(0) invert(1);">Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"><img src="images/project-2.svg" alt="ShopCart project screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <h3>ShopCart</h3>
+            <p>An e-commerce storefront with product filtering, a persistent cart, and Stripe-ready checkout flow.</p>
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                <img src="icons/github.svg" alt="">GitHub
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <img src="icons/external-link.svg" alt="" style="filter:brightness(0) invert(1);">Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"><img src="images/project-3.svg" alt="WeatherNow project screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <h3>WeatherNow</h3>
+            <p>A location-aware weather app with animated forecasts and a clean, minimal dashboard.</p>
+            <div class="project-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                <img src="icons/github.svg" alt="">GitHub
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <img src="icons/external-link.svg" alt="" style="filter:brightness(0) invert(1);">Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"><img src="images/project-4.svg" alt="ChatSphere project screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <h3>ChatSphere</h3>
+            <p>A real-time chat application with rooms, typing indicators, and Firebase authentication.</p>
+            <div class="project-tags"><span>React</span><span>Firebase</span><span>Node.js</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                <img src="icons/github.svg" alt="">GitHub
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <img src="icons/external-link.svg" alt="" style="filter:brightness(0) invert(1);">Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"><img src="images/project-5.svg" alt="FitTrack project screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <h3>FitTrack</h3>
+            <p>An Android fitness tracker for logging workouts and visualizing weekly progress.</p>
+            <div class="project-tags"><span>Android</span><span>JavaScript</span><span>Git</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                <img src="icons/github.svg" alt="">GitHub
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <img src="icons/external-link.svg" alt="" style="filter:brightness(0) invert(1);">Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb"><img src="images/project-6.svg" alt="RecipeBox project screenshot" loading="lazy"></div>
+          <div class="project-body">
+            <h3>RecipeBox</h3>
+            <p>A searchable recipe collection with saved favorites and a print-friendly view.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+                <img src="icons/github.svg" alt="">GitHub
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                <img src="icons/external-link.svg" alt="" style="filter:brightness(0) invert(1);">Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-info-card reveal">
+        <span class="section-eyebrow">Contact</span>
+        <h3>Let's work together</h3>
+        <p>Have a role or project in mind? I'd love to hear from you — I usually reply within a day.</p>
+
+        <div class="contact-detail">
+          <span class="icon-box"><img src="icons/mail.svg" alt=""></span>
+          <span>
+            <span class="label">Email</span><br>
+            <span class="value">sarah.johnson@example.com</span>
+          </span>
+        </div>
+        <div class="contact-detail">
+          <span class="icon-box"><img src="icons/phone.svg" alt=""></span>
+          <span>
+            <span class="label">Phone</span><br>
+            <span class="value">+92 300 1234567</span>
+          </span>
+        </div>
+        <div class="contact-detail">
+          <span class="icon-box"><img src="icons/location.svg" alt=""></span>
+          <span>
+            <span class="label">Location</span><br>
+            <span class="value">Rawalpindi, Pakistan</span>
+          </span>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub profile"><img src="icons/github.svg" alt=""></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile"><img src="icons/linkedin.svg" alt=""></a>
+          <a href="mailto:sarah.johnson@example.com" class="social-icon" aria-label="Send an email"><img src="icons/mail.svg" alt=""></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <div class="form-error" id="nameError"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <div class="form-error" id="emailError"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          <div class="form-error" id="subjectError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me a bit about the role or project..." required></textarea>
+          <div class="form-error" id="messageError"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-mark">SJ</span>
+          Sarah Johnson
+        </a>
+        <p>Frontend Developer crafting clean, responsive interfaces for the web.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub profile"><img src="icons/github.svg" alt=""></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile"><img src="icons/linkedin.svg" alt=""></a>
+          <a href="mailto:sarah.johnson@example.com" class="social-icon" aria-label="Send an email"><img src="icons/mail.svg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Get in Touch</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:sarah.johnson@example.com">sarah.johnson@example.com</a></li>
+          <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+          <li><a href="#contact">Contact form</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Sarah Johnson. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <img src="icons/arrow-up.svg" alt="">
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

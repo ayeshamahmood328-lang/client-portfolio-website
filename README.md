@@ -1,215 +1,104 @@
-# Responsive Client Portfolio Website
+# Sarah Johnson — Portfolio Website
 
-A modern, responsive portfolio website developed based on a client-style requirement using **HTML5, CSS3, and JavaScript**.
+A single-page, responsive portfolio website built with plain **HTML, CSS, and
+JavaScript** (no frameworks, no build step). Designed to be shared with
+recruiters, hiring managers, and clients.
 
-This project demonstrates a professional frontend development workflow, including requirement analysis, semantic HTML, responsive design, reusable code structure, and clean UI implementation.
-
----
-
-# 📋 Project Overview
-
-The objective of this project was to create a clean and professional portfolio website that helps showcase a developer's skills, projects, and contact information.
-
-The website is designed with recruiters, hiring managers, and potential clients in mind, providing a modern user experience across desktop, tablet, and mobile devices.
+**Live sections:** Home · About · Skills · Projects · Contact
 
 ---
 
-# 👨‍💼 Client Requirements
-
-The client requested a website with the following features:
-
-- Responsive Design
-- Professional UI
-- Single Page Layout
-- Sticky Navigation Bar
-- Hero Section
-- About Section
-- Skills Section
-- Projects Showcase
-- Contact Form
-- Resume Download Button
-- Social Media Links
-- Mobile Friendly Layout
-
----
-
-# ✨ Features
-
-- Fully Responsive Design
-- Modern Hero Section
-- Sticky Navigation
-- About Section
-- Skills Showcase
-- Project Cards
-- Contact Form (Frontend Validation)
-- Resume Download Button
-- Social Media Icons
-- Smooth Scrolling
-- Hover Effects
-- Semantic HTML Structure
-- Clean Folder Organization
-
----
-
-# 🛠 Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Responsive Web Design
-- SVG Graphics
-
----
-
-# 📁 Folder Structure
+## 1. Folder structure
 
 ```
-client-portfolio-website/
-
-│── index.html
-│
+novatech-portfolio/
+├── index.html              Single page — all sections live here
 ├── css/
-│   └── style.css
-│
+│   └── style.css           All styles (design tokens, layout, animations)
 ├── js/
-│   └── script.js
-│
+│   └── script.js           All interactivity (nav, form, scroll reveal)
 ├── images/
-│
-├── icons/
-│
+│   ├── hero-portrait.svg   Placeholder — replace with a real photo
+│   ├── about-photo.svg     Placeholder — replace with a real photo
+│   ├── project-1.svg … project-6.svg   Placeholder project thumbnails
+│   └── favicon.svg
+├── icons/                  Standalone SVG icons (github, linkedin, mail, …)
 ├── resume/
-│
-├── README.md
-│
-└── DOCUMENTATION.md
+│   └── Sarah-Johnson-Resume.pdf   Placeholder — replace with the real CV
+├── README.md                This file
+└── DOCUMENTATION.md          Section-by-section editing guide
 ```
 
----
+Everything is split into its own file/folder on purpose — HTML, CSS, JS,
+images, and icons are never mixed — so another developer can find and change
+things without reading through the whole project.
 
-# 🚀 Running the Project
+## 2. Running the site locally
 
-No installation is required.
+No build tools or installs are required.
 
-### Option 1
+**Option A — just open it**
+Double-click `index.html`, or right-click → "Open with" your browser.
 
-Open
-
-```
-index.html
-```
-
-directly in your browser.
-
-### Option 2 (Recommended)
-
-Run a local server.
-
-Python
-
+**Option B — local server (recommended, avoids browser file:// restrictions)**
 ```bash
-python -m http.server 8000
-```
-
-or
-
-```bash
+# From inside the project folder
 python3 -m http.server 8000
+# then open http://localhost:8000 in your browser
 ```
-
-Node
-
+or, with Node installed:
 ```bash
 npx serve .
 ```
 
----
+## 3. What to customize before going live
 
-# 🎯 Project Highlights
+| What | Where |
+|---|---|
+| Name, role, intro text | `index.html` → Hero section |
+| Bio, education, experience | `index.html` → About section |
+| Skills list | `index.html` → Skills section |
+| Projects (images, links, tags) | `index.html` → Projects section |
+| Email, phone, location | `index.html` → Contact + Footer |
+| Resume file | `resume/Sarah-Johnson-Resume.pdf` |
+| Photos | `images/hero-portrait.svg`, `images/about-photo.svg` |
+| Project screenshots | `images/project-1.svg` … `project-6.svg` |
+| Colors / fonts | `css/style.css` → `:root` variables at the top |
 
-- Professional Landing Page
-- Responsive Layout
-- Mobile Friendly
-- Organized Folder Structure
-- Easy to Maintain
-- Clean and Readable Code
-- Beginner Friendly Structure
-- Recruiter Ready UI
+See **DOCUMENTATION.md** for a more detailed, line-by-line guide.
 
----
+## 4. Contact form
 
-# 📱 Browser Compatibility
+The form currently validates input in the browser and shows a success
+message — it is **not wired to send real email yet**, since that needs a
+backend or a third-party form service. To make it functional, pick one:
 
-- Google Chrome
-- Microsoft Edge
-- Mozilla Firefox
-- Safari
+- [Formspree](https://formspree.io) — no backend needed, add an `action`
+  attribute to the `<form>` in `index.html`.
+- [EmailJS](https://www.emailjs.com) — send email directly from JavaScript.
+- A custom backend endpoint — replace the `setTimeout` block in
+  `js/script.js` (`initContactForm`) with a real `fetch()` call.
 
----
+## 5. Deployment
 
-# 📈 Future Improvements
+This is a static site, so it can be hosted for free on any of:
+- **GitHub Pages** — push this repo, enable Pages on the `main` branch.
+- **Netlify** or **Vercel** — drag-and-drop the folder or connect the repo.
 
-- Firebase Contact Form
-- Dark Mode
-- Backend Integration
-- Admin Dashboard
-- Blog Section
-- Multi-language Support
-- Project Filtering
-- Theme Switcher
+## 6. Browser support
 
----
+Tested against current versions of Chrome, Edge, Firefox, and Safari.
+Uses standard CSS (Grid, custom properties) and vanilla JS
+(`IntersectionObserver`) — no polyfills needed for modern browsers.
 
-# 📸 Screenshots
+## 7. Performance & SEO notes
 
-Home
+- Images are lightweight SVGs; swap in compressed JPG/WebP photos and keep
+  them under ~200KB each for fast loading.
+- `index.html` already has a descriptive `<title>`, meta description, and
+  semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`).
+- Add `alt` text to any new images you add.
 
-<img width="1335" height="641" alt="image" src="https://github.com/user-attachments/assets/b3fc02bb-5566-4b27-ac0a-5f2237dd24fe" />
+## 8. License
 
-About
-
-<img width="1335" height="643" alt="image" src="https://github.com/user-attachments/assets/f5eb43af-c81a-4a72-b928-9619ee44dbca" />
-
-Skills
-
-<img width="1343" height="634" alt="image" src="https://github.com/user-attachments/assets/251163bd-1d5f-41fa-b57c-c2f4e228a489" />
-
-Projects
-<img width="1337" height="580" alt="image" src="https://github.com/user-attachments/assets/489ee80a-55a4-406c-8eba-71c030306f51" />
-<img width="1340" height="552" alt="image" src="https://github.com/user-attachments/assets/4d1948d9-1b00-4889-8ee5-17cc35798f94" />
-<img width="1336" height="638" alt="image" src="https://github.com/user-attachments/assets/f3dd578b-8eb9-44b6-a3fd-dddd2e3f6635" />
-
-Contact
-
-<img width="1332" height="646" alt="image" src="https://github.com/user-attachments/assets/6c8d765b-6db2-45ea-a025-08bc963d4ae4" />
-<img width="1335" height="631" alt="image" src="https://github.com/user-attachments/assets/8b46580b-c58c-4594-a050-0ec3f3adc874" />
-
-# 📄 Documentation
-
-A detailed editing guide is available in
-
-```
-DOCUMENTATION.md
-```
-
----
-
-# 👩‍💻 Author
-
-**Ayesha Mahmood**
-
-Android Developer | Full Stack Web Development Learner
-
-LinkedIn: *(https://www.linkedin.com/in/ayesha-mahmood-736a5b2b4)*
-
----
-
-# 📌 Note
-
-This project was developed as a **client requirement-based portfolio website** to practice professional frontend development workflow, including planning, implementation, responsive design, and clean code organization.
-
----
-
-# 📜 License
-
-This project is available for learning and portfolio purposes.
+Free to use and modify for this portfolio.
